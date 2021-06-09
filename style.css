@@ -1,0 +1,60 @@
+body {
+   font-family: helvetica, sans-seriv;
+}
+
+section {
+   background-color: #EFEFEF;
+   margin-bottom: 30px;
+}
+
+span {
+   color: #64C4BC;
+}
+
+section.Top {
+   width: 60%;
+}
+
+section.List {
+   height: 150px;
+   float: left;
+   width: 76%;
+}
+
+section.Right {
+   width: 23%;
+}
+
+
+div.Content {
+   float: right;
+   border-left: 2px solid black;
+   width: 91.8%;
+   height: 66%;
+}
+
+.Content span, p {
+   position: relative;
+   left: 10px;
+   top:  10px;
+   margin: 0;
+}
+
+h2 {
+   border-bottom: 2px solid black;
+   margin-bottom: 0;
+}
+
+section.Right {
+   float: right;
+   height: 150px;
+}
+
+div.Year {
+   float: left;
+   position: relative;
+   top: 25px;
+ 
+}
+
+
