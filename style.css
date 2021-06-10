@@ -1,6 +1,19 @@
 body {
+
    font-family: helvetica, sans-seriv;
 }
+
+header {
+   margin-bottom: 20px;
+}
+
+
+section.Raw {
+   clear: left;
+   height: 80px;
+   margin-bottom: 0;
+}
+
 
 section {
    background-color: #EFEFEF;
@@ -9,52 +22,119 @@ section {
 
 span {
    color: #64C4BC;
+   font-weight: bold;
 }
 
-section.Top {
-   width: 100%;
+section#HeaderRight {
+   height: 60px;
+   background-color: #fff;
+   margin-bottom: 0;
+
 }
 
-section.List {
-   height: 150px;
+section.Left{
+   height: 120px;
    float: left;
    width: 76%;
 }
 
-section.Right {
-   width: 23%;
+
+section#Bottom {
+   position: relative;
+   top: 450px;
 }
 
 
-div.Content {
+section#BottomLeft {
+   width: 100%; 
+
+}
+
+
+section.Right {
+   width: 23%;
+   height: 100px;
+   background-color: #fff;
+}
+
+div.InnerRight {
+   height: 120px;
+   margin-bottom: 20px;
+   background-color: #EFEFEF;
+}
+
+#ButtomP {
+   margin-bottom: 10px;
+}
+
+#Leadership {
+   margin-bottom: 0;
+   height: 100px;
+}
+
+#LeadershipTop {
+   height: 10px;
+}
+
+.InnerRight h2 {
+   
+   margin-bottom: 10px;
+}
+
+#TopRighth2 {
+   margin-top: 0px;  
+   padding-bottom: 19.5px;
+}
+
+
+div.Description {
    float: right;
-   border-left: 2px solid black;
-   width: 91.8%;
+   width: 94%;
    height: 66%;
 }
 
-.Content span, p {
+.Description span, p {
    position: relative;
    left: 10px;
    top:  10px;
    margin: 0;
 }
 
-h2 {
+h1 {
+   background-color: #fff;
+   font-size: 350%;
+}
+
+h1, h2 {
    border-bottom: 2px solid black;
    margin-bottom: 0;
 }
+
+
 
 section.Right {
    float: right;
    height: 150px;
 }
 
+
 div.Year {
+   float: left;
+   width: 80px;
+   height: 80px;
+   border-right: 2px solid black;
+}
+
+div.Year p {
    float: left;
    position: relative;
    top: 25px;
- 
 }
 
 
+footer {
+   position: relative;
+   top: 620px;
+   margin-left: 30%;
+
+}
