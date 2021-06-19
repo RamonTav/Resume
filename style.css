@@ -1,169 +1,26 @@
 body {
    font-family: Helvetica, sans-serif;
-   margin-left: 20%;
 }
 
 header {
-   width: 50%; 
-   height: 68px;
-   margin-bottom: 20px;
    border-bottom: 3px solid Black;
 }
 
 header h1 {
-   font-size: 350%;
-}
-
-span {
-   color: #64C4BC;
-}
-
-
-.Center {
-   width: 60%; 
 }
 
 header div {
-  float: right; 
-  line-height: 4px;
-}
-
-.CenterHeader {
-   height: 20px;
-   padding-left: 10px;
-   padding-top: 10px;
-   border-bottom: 2px solid black;
-   margin-bottom: 0;
-}
-
-#middle section {
-   background-color: #EEEEEE;
-}
-
-#middle .RightPane section{
-   background-color: #FFFFFF;
-}
-
-#middle div {
-   background-color: #EFEFEF;
-}
-
-#BottomP {
-   height: 102px;
-}
-
-
-#LeftPane {
-   width: 76%;
-   height: 30px;
-}
-
-
-
-.RightPane {
-   width: 23%;
    float: right;
 }
 
-
-.RightPane div {
-   margin-bottom: 10px;
-}
-
-
-
-.RightPane h3 {
-   margin: 0;
-}
-
-.WorkExperience {
-   width: 76%;
-   height: 650px;
-   border-top: 2px solid black;
-   
-}
-
-
-.WorkExperience p {
-   margin: 0;
-   margin-left: 10px;
-}
-
-.Work {
-  width: 91.8%;
-  float: right; 
-}
-
-.WorkExperience .WorkPT {
-   margin-top: 10px;
-}
-
-.WorkExperience .WorkPB {
-   margin-bottom: 20px;
-}
-
-.Year {
-   width: 8%;
-   height: 106px;
-   border-right: 1px solid black;
-   float: left;
-}
-
-.Year p {
-   position: relative;
-   top: 35px;
-   left: 2px;
-   margin-bottom: 30px;
-}
-
-.Objective p {
-   margin-top: 0;
-}
-
-.Objective .SpanTop {
-   margin-top: 10px;
-   margin-bottom: 0;
-}
-
-
-#BottomPane {
-   clear: left;
-   width: 60%;
-   height: 30px;
-}
-
-
-
-.BottomYear {
-   width: 6%;
-   height: 106px;
-   border-right: 1px solid black;
-   float: left;
-}
-
-.BottomYear p {
-   position: relative;
-   top: 35px;
-   left: 10px;
-   margin-bottom: 30px;
-}
-
-.BottomWork {
-   float: right;
-   width: 93.85%;
-}
-
-.BottomWork p {
+header div p {
    margin: 0;
 }
 
 
-p.WorkPT {
-   margin-top: 10px;
-}
 
-p.WorkPB {
-   margin-bottom: 20px;
+span {
+   color: #64C4BC;
 }
 
 
@@ -171,5 +28,5 @@ footer {
    clear: left;
    position: relative;
    top: 20px;
-   margin-left: 250px;
+  margin-left: 250px;
 }
