@@ -2,11 +2,16 @@ body {
    font-family: Helvetica, sans-serif;
 }
 
-header {
-   border-bottom: 3px solid Black;
+main {
+   background-color: #DDDDDD;
 }
 
-header h1 {
+span {
+   color: #64C4BC;
+}
+
+header {
+   border-bottom: 3px solid Black;
 }
 
 header div {
@@ -17,10 +22,23 @@ header div p {
    margin: 0;
 }
 
+main {
+   width: 75%;
+}
+
+main h2 {
+   border-bottom: 3px solid Black;
+}
+
+aside {
+   float: right;
+   width: 24.5%;
+}
 
 
-span {
-   color: #64C4BC;
+aside h2 {
+   border-bottom: 3px solid Black;
+   background-color: #DDDDDD;
 }
 
 
