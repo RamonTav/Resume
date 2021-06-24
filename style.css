@@ -3,7 +3,6 @@ html {
    font-size: 100%;
 }
 
-
 span {
    color: #64C4BC;
 }
@@ -13,7 +12,6 @@ header {
    margin-bottom: 1.5rem;
 }
 
-
 header div {
    float: right;
 }
@@ -22,11 +20,9 @@ header h1 {
    font-size: 3rem;
 }
 
-
 header div p {
    margin: 0;
 }
-
 
 main {
    float: left;
@@ -39,15 +35,18 @@ main h2 {
    margin-bottom: 0;
 }
 
-
 aside {
    float: right;
    width: 24.2%;
-   /* background-color: #EEEEEE; */
+   background-color: #EEEEEE;
 }
 
+#AsideTopH2 {
+   border-top: none;
+}
 
 aside h2 {
+   border-top: 1em solid white;
    border-bottom: 0.125rem solid Black;
    border-bottom: 2px solid Black;
 }
@@ -55,8 +54,7 @@ aside h2 {
 aside div {
    background-color: #EEEEEE;
    margin-bottom: 1rem; 
-   padding-top: 1rem;
-
+   /* padding-top: 1rem; */
 }
 
 p.Year {
@@ -83,7 +81,7 @@ aside ul {
 }
 
 main li.Upperli {
-   padding-top: 1em;
+   padding-top: 2em;
    
 }
 
@@ -93,5 +91,5 @@ li.Bottomli {
 
 footer {
    clear: left;
-   text-align: center;
+   text-align center;
 }
