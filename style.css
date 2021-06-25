@@ -25,13 +25,13 @@ header div p {
 }
 
 
-main {
+section {
    float: left;
    background-color: #EEEEEE;
    width: 75%;
 }
 
-main h2 {
+section h2 {
    border-bottom: 0.125rem solid Black;
    margin-bottom: 0;
 }
@@ -74,7 +74,7 @@ p.Year {
    top: 1.7em;
 }
 
-main ul {
+section ul {
    list-style: none;
    margin-left: 4rem;
    margin-top: 0;
@@ -90,7 +90,7 @@ aside ul {
    padding-left: 1rem;
 }
 
-main li.Upperli {
+section li.Upperli {
    padding-top: 1.8em;
 }
 
@@ -98,7 +98,7 @@ li.Bottomli {
    padding-bottom: 1em;
 }
 
-#BottomMain {
+#BottomSection{
    clear: left;
    width: 100%;
    margin-top: 1.5rem;
