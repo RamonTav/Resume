@@ -3,6 +3,12 @@ html {
    font-size: 100%;
 }
 
+body {
+   width: 50%;
+   margin-left: 25%;
+}
+
+
 span {
    color: #64C4BC;
 }
@@ -10,6 +16,10 @@ span {
 header {
    border-bottom: 0.187rem  solid Black;
    margin-bottom: 1.5rem;
+}
+
+li {
+   padding-right: 1rem;
 }
 
 header div {
