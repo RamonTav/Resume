@@ -91,8 +91,7 @@ aside ul {
 }
 
 main li.Upperli {
-   padding-top: 2em;
-   
+   padding-top: 1.8em;
 }
 
 li.Bottomli {
@@ -103,6 +102,7 @@ li.Bottomli {
    clear: left;
    width: 100%;
    margin-top: 1.5rem;
+   margin-bottom: 1rem;
 }
 
 footer {
