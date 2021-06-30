@@ -3,119 +3,29 @@ html {
    font-size: 100%;
 }
 
-body {
-   width: 50%;
-   margin-left: 25%;
-}
-
-
 span {
    color: #64C4BC;
 }
 
+
 header {
-   border-bottom: 0.187rem  solid Black;
-   margin-bottom: 1.5rem;
-}
-
-li {
-   padding-right: 1rem;
-}
-
-header div {
-   float: right;
-}
-
-header h1 {
-   font-size: 3rem;
-}
-
-header div p {
-   margin: 0;
-}
-
-
-section {
-   float: left;
-   background-color: #EEEEEE;
-   width: 75%;
-}
-
-section h2 {
-   border-bottom: 0.125rem solid Black;
-   margin-bottom: 0;
-}
-
-aside {
-   float: right;
-   width: 24.2%;
-   background-color: #EEEEEE;
-}
-
-#AsideTopH2 {
-   border-top: none;
-   padding-top: 0;
-   padding-left: 1rem;
-}
-
-aside h2 {
-   border-top: 1em solid white;
-   border-bottom: 0.125rem solid Black;
-   border-bottom: 2px solid Black;
-   padding-top: 1rem;
-   padding-left: 1rem;
-   padding-bottom: 0;
-   text-align: bottom;
-}
-
-aside div {
-   background-color: #EEEEEE;
-   margin-bottom: 1rem; 
-}
-
-#Leadership {
-   margin-bottom: 0.4rem;
-}
-
-p.Year {
-   float: left;
-   padding-left: 1rem;
-   position: relative;
-   top: 1.7em;
-}
-
-section ul {
-   list-style: none;
-   margin-left: 4rem;
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-left: 1rem;
-   border-left: 0.125rem solid black;
-}
-
-aside ul {
-   list-style: none;
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-left: 1rem;
-}
-
-section li.Upperli {
-   padding-top: 1.8em;
-}
-
-li.Bottomli {
-   padding-bottom: 1em;
-}
-
-#BottomSection{
-   clear: left;
-   width: 100%;
-   margin-top: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 2px solid black;
    margin-bottom: 1rem;
 }
 
-footer {
-   clear: left;
-   text-align: center;
+header h1 {
+   font-size: 2.5em;
 }
+
+header p {
+   line-height: 0.3em;
+}
+
+main {
+   display: flex;
+   justify-content: space-between;
+}
+
+
