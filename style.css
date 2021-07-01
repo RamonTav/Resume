@@ -36,19 +36,22 @@ main {
 }
 
 
-main, aside, #BottomSection {
+main, aside, #CharityWork{
    background-color: #EEEEEE;
 }
 
 
 #WorkExperience {
    border-right: 1rem solid white;
+   padding-bottom: 1em;
 }
 
 
 
 #WorkExperience h2 {
    border-bottom: 2px solid black;
+   margin-bottom: 0;
+   padding-left: 1em;
 }
 
 #WorkExperience Article {
@@ -57,12 +60,25 @@ main, aside, #BottomSection {
 
 .Year {
    align-self: flex-start;
-   padding-top: 1em;
-Error, type a valid tag
+   padding-top: 2em;
+   padding-right: 1em;
+   padding-left: 1em;
+   margin-top: 0;
 }
 
 #WorkExperience ul {
+   list-style: none;
    border-left: 1px solid black;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 1em;
+   padding-left: 1em;
+   
+}
+
+
+aside div {
+   border-bottom: 1em solid white;
 }
 
 
@@ -70,4 +86,26 @@ Error, type a valid tag
    border-bottom: 2px solid black;
 }    
 
+#Leadership {
+   padding-bottom: 2em;
+   border-bottom: 0;
+}
+
+
+aside h2 {
+   padding-left: 1em;
+}
+
+aside ul {
+   list-style: none;
+   padding-left: 1em;
+   
+ }
+
+#CharityWork h2 {
+   border-bottom: 2px solid black;
+   margin-bottom: 0;
+   padding-left: 1em;
+   
+}
 
