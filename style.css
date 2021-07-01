@@ -3,6 +3,12 @@ html {
    font-size: 100%;
 }
 
+
+body {
+   width: 60%;
+   margin-left: 20%;
+}
+
 span {
    color: #64C4BC;
 }
@@ -16,16 +22,28 @@ header {
 }
 
 header h1 {
-   font-size: 2.5em;
+   font-size: 3.0em;
 }
 
-header p {
-   line-height: 0.3em;
-}
 
 main {
    display: flex;
    justify-content: space-between;
+}
+
+
+main, aside, #BottomSection {
+   background-color: #EEEEEE;
+}
+
+
+#TopSection {
+   border-right: 1rem solid white;
+}
+
+
+header p {
+   line-height: 0.3em;
 }
 
 #TopSection h2 {
