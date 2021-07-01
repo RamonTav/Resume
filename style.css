@@ -5,8 +5,8 @@ html {
 
 
 body {
-   width: 60%;
-   margin-left: 20%;
+   width: 50%;
+   margin-left: 25%;
 }
 
 span {
@@ -18,11 +18,15 @@ header {
    display: flex;
    justify-content: space-between;
    border-bottom: 2px solid black;
-   margin-bottom: 1rem;
+   margin-bottom: 2rem;
 }
 
 header h1 {
    font-size: 3.0em;
+}
+
+header p {
+   line-height: 0.3em;
 }
 
 
@@ -37,19 +41,33 @@ main, aside, #BottomSection {
 }
 
 
-#TopSection {
+#WorkExperience {
    border-right: 1rem solid white;
 }
 
 
-header p {
-   line-height: 0.3em;
-}
 
-#TopSection h2 {
+#WorkExperience h2 {
    border-bottom: 2px solid black;
 }
+
+#WorkExperience Article {
+   display: flex;
+}
+
+.Year {
+   align-self: flex-start;
+   padding-top: 1em;
+Error, type a valid tag
+}
+
+#WorkExperience ul {
+   border-left: 1px solid black;
+}
+
 
 #AsideTopH2 {
    border-bottom: 2px solid black;
 }    
+
+
