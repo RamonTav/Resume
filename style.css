@@ -31,13 +31,21 @@ header p {
 }
 
 
-main {
+#Middle {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
+#Middle #WorkExperience {
+   width: 70%;
+}
 
-main, aside, .SectionA {
+#Middle aside {
+   width: 28.3%;
+}
+
+#Middle, aside, .SectionA {
    background-color: #EEEEEE;
 }
 
