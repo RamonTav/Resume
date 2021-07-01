@@ -67,7 +67,7 @@ main, aside, .SectionA {
 
 .SectionA ul {
    list-style: none;
-   border-left: 1px solid black;
+   border-left: 3px solid black;
    margin-top: 0;
    margin-bottom: 0;
    padding-top: 1em;
@@ -93,6 +93,7 @@ aside div {
 
 aside h2 {
    padding-left: 1em;
+   border-bottom: 2px solid black;
 }
 
 aside ul {
