@@ -28,4 +28,10 @@ main {
    justify-content: space-between;
 }
 
+#TopSection h2 {
+   border-bottom: 2px solid black;
+}
 
+#AsideTopH2 {
+   border-bottom: 2px solid black;
+}    
