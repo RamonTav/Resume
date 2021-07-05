@@ -4,122 +4,25 @@ html {
 }
 
 
-body {
-   width: 50%;
-   margin-left: 25%;
-}
-
 span {
    color: #64C4BC;
 }
 
+body {
+   display: grid; 
+   grid-template-areas: " A B B B C ";
+   grid-template-columns: 20% repeat(3,20%) 1fr;
+  }
 
-header {
+Header {
    display: flex;
+   grid-area: B;
    justify-content: space-between;
    border-bottom: 2px solid black;
    margin-bottom: 2rem;
 }
 
-header h1 {
-   font-size: 3.0em;
-   margin-bottom: 1rem;
-}
-
-header p {
+Header P {
    line-height: 0.3em;
 }
-
-
-#Middle {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-#Middle #WorkExperience {
-   width: 70%;
-}
-
-#Middle aside {
-   width: 28.3%;
-}
-
-#Middle, aside, .SectionA {
-   background-color: #EEEEEE;
-}
-
-
-.SectionA {
-   border-right: 1rem solid white;
-   padding-bottom: 1em;
-}
-
-.SectionA h2 {
-   border-bottom: 2px solid black;
-   margin-bottom: 0;
-   padding-left: 1em;
-}
-
-.SectionA Article {
-   display: flex;
-}
-
-.Year {
-   align-self: flex-start;
-   padding-top: 2em;
-   padding-right: 1em;
-   padding-left: 1em;
-   margin-top: 0;
-}
-
-.SectionA ul {
-   list-style: none;
-   border-left: 3px solid black;
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-top: 1em;
-   padding-left: 1em;
-   
-}
-
-
-aside div {
-   border-bottom: 1em solid white;
-}
-
-
-#AsideTopH2 {
-   border-bottom: 2px solid black;
-}    
-
-#Leadership {
-   padding-bottom: 2em;
-   border-bottom: 0;
-}
-
-
-aside h2 {
-   padding-left: 1em;
-   border-bottom: 2px solid black;
-}
-
-aside ul {
-   list-style: none;
-   padding-left: 1em;
-   
- }
-
-#CharityWork {
-   margin-top: 1rem;
-   border-right: 0;
-   padding-top: 0.25em;
-}
-
-footer {
-   width: 50%;
-   margin: 0 auto;
-   
-}
-
 
