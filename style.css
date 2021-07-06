@@ -20,7 +20,9 @@ ul {
 body {
    display: grid; 
    grid-template-areas: " A B B B C "
-                        " A D D E C ";
+                        " A D D E C "
+                        " A F F F C "
+                        " A G G G C "; 
    grid-template-columns: 20% repeat(3,20%) 1fr;
   }
 
@@ -32,13 +34,25 @@ Header {
    margin-bottom: 2rem;
 }
 
-Header P {
+header h1 {
+   font-size: 3em;
+   margin-bottom: 0.5rem;
+}
+
+header div {
+   padding-top: 1em;
+}
+
+header p {
    line-height: 0.3em;
+   padding-right: 1em;
 }
 
 main {
    grid-area: D;
    margin-right: 1em;
+   margin-bottom: 1rem;
+
 }
 
 
@@ -49,7 +63,7 @@ main {
 
 }
 
-main article {
+main article, section article {
    display: flex;
 }
 
@@ -59,7 +73,7 @@ main article {
    padding: 2em 1em;
 }
 
-main ul {
+main ul, section ul {
    margin-top: 0;
    margin-bottom: 0;
    padding-top: 1em;
@@ -68,6 +82,7 @@ main ul {
 
 aside {
    grid-area: E;
+   margin-bottom: 1rem;
 }
 
 aside div {
@@ -92,3 +107,12 @@ aside ul {
    border-bottom: 0;
 }
 
+section {
+   grid-area: F;
+   margin-bottom: 1rem;
+}
+
+footer {
+   grid-area: G;
+   justify-self: center;
+}
