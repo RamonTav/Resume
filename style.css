@@ -8,9 +8,19 @@ span {
    color: #64C4BC;
 }
 
+
+ul {
+   list-style: none;
+}
+
+.area {
+   background-color: #EEEEEE;
+}
+
 body {
    display: grid; 
-   grid-template-areas: " A B B B C ";
+   grid-template-areas: " A B B B C "
+                        " A D D E C ";
    grid-template-columns: 20% repeat(3,20%) 1fr;
   }
 
@@ -24,5 +34,61 @@ Header {
 
 Header P {
    line-height: 0.3em;
+}
+
+main {
+   grid-area: D;
+   margin-right: 1em;
+}
+
+
+.TopH2 {
+   margin-bottom: 0;
+   border-bottom: 2px solid black;
+   padding-left: 1em;
+
+}
+
+main article {
+   display: flex;
+}
+
+.Year {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 2em 1em;
+}
+
+main ul {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 1em;
+   border-left: 2px solid black;
+}
+
+aside {
+   grid-area: E;
+}
+
+aside div {
+   display: flex;
+   flex-wrap: wrap;
+   border-bottom: 1em solid white;
+}
+
+aside div h2 {
+   width: 100%;
+   border-bottom: 2px solid black;
+   margin-bottom: 0;
+
+}
+
+aside ul {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+}
+
+#Leadership {
+   border-bottom: 0;
 }
 
