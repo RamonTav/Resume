@@ -8,6 +8,10 @@ span {
    color: #64C4BC;
 }
 
+h2 {
+   padding-bottom: 0.5em;
+}
+
 
 ul {
    list-style: none;
@@ -26,12 +30,12 @@ body {
    grid-template-columns: 20% repeat(3,20%) 1fr;
   }
 
-Header {
+header {
    display: flex;
    grid-area: B;
-   justify-content: space-between;
    border-bottom: 2px solid black;
    margin-bottom: 2rem;
+   justify-content: space-between;
 }
 
 header h1 {
@@ -52,19 +56,21 @@ main {
    grid-area: D;
    margin-right: 1em;
    margin-bottom: 1rem;
-
 }
 
 
 .TopH2 {
    margin-bottom: 0;
    border-bottom: 2px solid black;
+   padding-bottom: 0.5em;
    padding-left: 1em;
+
 
 }
 
 main article, section article {
    display: flex;
+   flex: 0 0 auto;
 }
 
 .Year {
@@ -77,7 +83,9 @@ main ul, section ul {
    margin-top: 0;
    margin-bottom: 0;
    padding-top: 1em;
+   padding-left: 1em;
    border-left: 2px solid black;
+
 }
 
 aside {
@@ -86,21 +94,19 @@ aside {
 }
 
 aside div {
-   display: flex;
-   flex-wrap: wrap;
    border-bottom: 1em solid white;
 }
 
 aside div h2 {
-   width: 100%;
    border-bottom: 2px solid black;
-   margin-bottom: 0;
+   margin-left: 0.5em;
 
 }
 
 aside ul {
    margin-top: 0.5em;
    margin-bottom: 0.5em;
+   padding-left: 1em;
 }
 
 #Leadership {
@@ -116,3 +122,89 @@ footer {
    grid-area: G;
    justify-self: center;
 }
+
+@media all and (max-width: 980px) {
+   body {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+   }
+
+   header {
+      display: flex;
+      flex-flow: column;
+      order:0;
+      border-bottom: 0;
+      margin-left: 0.5em;
+   }
+
+   header h1 {
+      margin-top: 1em;
+      order: 0;
+      font-size: 4.5em;
+      border-bottom: 2px solid black;
+   }
+   
+   header div {
+      display: flex;
+      flex-flow: row wrap; 
+      justify-content: space-around;
+      font-size: 2em;
+   } 
+
+   header p {
+      width: 100%;
+      line-height: 0.2em;
+      margin-top: 0.2em;
+      margin-bottom: 0.6em;
+      font-size: 1.25em;
+   }
+
+   .HeaderP {
+      margin-bottom: 0.9em;
+   }
+
+   main {
+      order: 1;
+      margin-bottom: 2rem;
+   }
+
+   .Year {
+      width: 3em;
+      font-size: 3em;
+      font-weight: bold;
+      padding: 2em 0.2em;
+      }
+
+   aside {
+      order: 3;
+      margin-bottom: 2rem;
+   }
+
+   aside div {
+   border-bottom: 2em solid white;
+}   
+      
+   aside h2 {
+      padding-left: 1em;
+   }
+
+   #CharityWork {
+      order: 2;
+      margin-bottom: 2rem;
+   }
+
+   footer {
+     order: 4;
+     align-self: flex-start;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     font-size: 3em;
+   }
+
+   footer p {
+      margin: 0.3em;
+   }
+
+  } 
