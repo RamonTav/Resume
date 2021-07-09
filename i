@@ -1,1 +1,1 @@
-index.html
+/opt/lampp/htdocs/resume/index.html
