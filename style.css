@@ -18,6 +18,7 @@ h2 {
 ul {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    list-style: block;
 =======
    list-style: none;
@@ -25,6 +26,9 @@ ul {
 =======
    list-style: block;
 >>>>>>> 4dc78343ed324dc82cd537614796112d85758525
+=======
+   list-style: none;
+>>>>>>> responsive
 }
 
 .area {
