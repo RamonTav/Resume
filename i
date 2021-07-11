@@ -1,1 +1,0 @@
-/opt/lampp/htdocs/resume/index.html
