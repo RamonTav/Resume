@@ -16,7 +16,11 @@ h2 {
 
 
 ul {
+<<<<<<< HEAD
    list-style: block;
+=======
+   list-style: none;
+>>>>>>> responsive
 }
 
 .area {
