@@ -2,15 +2,14 @@ html { font-family: Helvetica, sans-serif; }
 
 body {
 display: grid; 
-grid-template-areas: " A B B B C "
-                     " A D D E C "
-                     " A F F F C "
-                     " A G G G C ";
+grid-template-areas: " Z A A A X "
+                     " Z B B C X "
+                     " Z D D D X ";
 grid-template-columns: 1fr repeat(3,25%) 1fr;
 }
 
 header {
- grid-area: B;
+ grid-area: A;
  margin: 0 0 2rem 0;
  padding: 5rem  1rem  2rem 1rem;
  background-color: #64C4BC;
@@ -53,7 +52,7 @@ header div {
 
 
 main {
-   grid-area: D;
+   grid-area: B;
    margin-right: 1em;
    margin-bottom: 1rem;
 }
@@ -109,7 +108,7 @@ main li:first-child {
   }
 
 aside {
-   grid-area: E;
+   grid-area: C;
    margin-bottom: 1rem;
    background-color: #fff;
 }
@@ -137,7 +136,7 @@ aside ul {
 
 
 #Education {
-   grid-area: F;
+   grid-area: D;
    margin-right: 1em;
    margin-bottom: 1rem;
    width: 100%;
@@ -173,14 +172,6 @@ aside ul {
 
 .P75 {
    width:75%;
-}
-
-
-footer {
-   grid-area: G;
-   justify-self: center;
-   display: flex;
-   font-size: 1.5em;
 }
 
 @media all and (max-width: 1080px) {
@@ -287,20 +278,6 @@ aside h2 {
 #Education li {
       width: 100%;
       font-size: 1.5rem; 
-   }
-
-
-   footer {
-     order: 5;
-     align-self: flex-start;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     font-size: 3em;
-   }
-
-   footer p {
-      margin: 0.3em;
    }
 
 
