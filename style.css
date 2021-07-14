@@ -1,81 +1,66 @@
-html {  
-   font-family: Helvetica, sans-serif;
-   font-size: 100%;
-}
-
+html { font-family: Helvetica, sans-serif; }
 
 body {
-   display: grid; 
-   grid-template-areas: " A B B B C "
-                        " A D D D C "
-                        " A E E F C "
-                        " A G G G C "
-                        " A H H H C ";
-   grid-template-columns: 1fr repeat(3,25%) 1fr;
-   padding-left: 0;
-   /* background: #ABABAB; */
-  }
-
-span {
-   color: #64C4BC;
-   font-weight: bold;
-}
-
-
-h2 {
-   padding-bottom: 0.5em;
-}
-
-
-ul {
-   list-style: none;
-}
-
-
-.area {
-   background-color: #EEEEEE;
-   padding-bottom: 1em;
+display: grid; 
+grid-template-areas: " A B B B C "
+                     " A D D E C "
+                     " A F F F C "
+                     " A G G G C ";
+grid-template-columns: 1fr repeat(3,25%) 1fr;
 }
 
 header {
-   grid-area: B;
-   margin-bottom: 2rem;
-   justify-content: space-between;
-   background-color: #64C4BC;
-   padding-left: 1em;
-   margin-bottom: 2rem;
+ grid-area: B;
+ margin: 0 0 2rem 0;
+ padding: 5rem  1rem  2rem 1rem;
+ background-color: #64C4BC;
 }
+
+h1 {
+ margin: 0 0 1rem 0;
+ font-size: 3rem;
+}
+
 header span {
    color: white;
    font-weight: bold;
 }
 
-header h1 {
-   font-size: 3em;
-   margin-bottom: 0.5rem;
-   padding-right: 0;
+h2 {
+   margin: 0 0 3rem 0;
 }
+
+header p {
+ margin: 0;
+ font-size: 1.5rem;
+}
+
+
+ul {
+ list-style: none;
+}
+
+.area {
+background-color: #EEEEEE;
+padding-bottom: 1em;
+}
+
 
 header div {
    padding-top: 1em;
 }
 
-header p {
-   line-height: 0.3em;
-   padding-right: 1em;
-}
 
-.Resume {
-   grid-area: D;
-   margin-top: 0;
-   margin-bottom: 2rem;
-   font-size: 1.5em;
-}
 
 main {
-   grid-area: E;
+   grid-area: D;
    margin-right: 1em;
    margin-bottom: 1rem;
+}
+
+span {
+ color: #64C4BC;
+ font-weight: bold;
 }
 
 #Education li {
@@ -124,7 +109,7 @@ main li:first-child {
   }
 
 aside {
-   grid-area: F;
+   grid-area: E;
    margin-bottom: 1rem;
    background-color: #fff;
 }
@@ -136,7 +121,6 @@ aside div {
 aside div h2 {
    border-bottom: 1px solid black;
    margin-left: 0.5em;
-
 }
 
 aside ul {
@@ -153,7 +137,7 @@ aside ul {
 
 
 #Education {
-   grid-area: G;
+   grid-area: F;
    margin-right: 1em;
    margin-bottom: 1rem;
    width: 100%;
@@ -193,50 +177,46 @@ aside ul {
 
 
 footer {
-   grid-area: H;
+   grid-area: G;
    justify-self: center;
    display: flex;
    font-size: 1.5em;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 1080px) {
 
-   html {
-      width: 100%;
-      overflow-x: hidden;
-      margin: 0;
-      text-size-adjust: none;
-   }
+html {
+ text-size-adjust: none; /*Avoid text inflation on mobil browsers*/
+ overflow-x: hidden; /*Avoid right blank space when overflow*/
+ width: 100%;
+}
 
+body {
+ display: flex;
+ flex-flow: column;
+ width: 100%;
+ margin: 0;
+}
 
-   body {
-      margin: 0;
-      width: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-   }
+header {
+ order: 0;
+ margin: 0 0 2rem 0;
+ padding: 3rem  1rem  3rem 1rem;
+}
 
-   header {
-      display: flex;
-      flex-flow: column;
-      border-bottom: 0;
-      padding-bottom: 2em;
-   }
+h1 {
+ font-size: 4.5rem;
+}
 
-   header h1 {
-      order: 0;
-      margin-top: 1em;
-      margin-left: 1.5rem;
-      margin-bottom: 0em;   
-      font-size: 4.2em;
-   }
+header h2 {
+ font-size: 3.2em;
+ margin-bottom: 2rem;
+}
 
-   header h2 {
-      font-size: 3.2em;
-      margin-left: 1.5rem;
-      margin-bottom: 0;
-   }
+header p {
+ margin: 0;
+ font-size: 3.0rem;
+}
 
    
    header div {
@@ -245,31 +225,12 @@ footer {
       justify-content: space-around;
    } 
 
-   header p {
-      width: 100%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-   }
 
-   .HeaderP {
-      margin-bottom: 0.9em;
-   }
-
-
-   main {
+main {
       display: block; /*block*/
       order: 1;
       margin-bottom: 2rem;
-   }
-
-
-   p.Resume {
-      display: block; /*block*/
-      margin-left: 1em;
-      font-size: 1.5rem;
-      text-justify: auto;
-   }
+}
 
 .TopH2 {
       font-size: 2.5rem;
