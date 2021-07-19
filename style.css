@@ -25,7 +25,6 @@ header span {
  font-weight: bold;
 }
 
-
 header h2 {
  margin: 0 0 3rem;
 }
@@ -35,14 +34,17 @@ header p {
  font-size: 1.5rem;
 }
 
-
 main {
  grid-area: B;
  margin: 0 1rem 1rem 0;
  padding-top: 1rem;
 }
 
-main h2, article h2, aside h2 {
+main, aside section,  article {
+background-color: #EEEEEE;
+}
+
+h2 {
  margin: 0;
  padding: 0 1rem;
  border-bottom: 1px solid black;
@@ -64,38 +66,21 @@ main p, article p {
  font-size: 1.5em;
 }
 
-article p:first-child {
-   padding-top: 2rem;
-}
-
-
 ul.First {
-   padding-top: 2rem;
+ padding-top: 2rem;
 }
 
 ul {
-   flex: 1 1 auto;
-   margin: 0;
-   padding: 0 1rem 2rem;
-   border-left: 1px solid black;
-}
-
-ul {
+ flex: 1 1 auto;
+ margin: 0;
+ padding: 0 1rem 2rem;
+ border-left: 1px solid black;
  list-style: none;
-
-}
-
-main, article {
-background-color: #EEEEEE;
 }
 
 span {
  color: #64C4BC;
  font-weight: bold;
-}
-
-article li {
-   font-size: 1.5em;
 }
 
 main li, aside li, article li {
@@ -120,7 +105,6 @@ aside section {
  flex: 1 1 auto;
  margin: 0 0 1rem 0;
  padding-top: 1rem;
- background-color: #EEEEEE;
 }
 
 aside ul {
@@ -129,16 +113,6 @@ aside ul {
 
 aside li{
      margin-bottom: 0rem;
-}
-
-section.Last {
- margin-bottom: 0;
-}
-
-article {
- grid-area: D;
- margin: 0 0 1em 0;
- padding: 1rem 0 0;
 }
 
 .ProgressBar {
@@ -158,6 +132,24 @@ article {
 .P75 {
    width:75%;
 }
+section.Last {
+ margin-bottom: 0;
+}
+
+article {
+ grid-area: D;
+ margin: 0 0 1em 0;
+ padding: 1rem 0 0;
+}
+
+article p:first-child {
+   padding-top: 2rem;
+}
+
+article li {
+   font-size: 1.5em;
+}
+
 
 @media all and (max-width: 1080px) {
 
