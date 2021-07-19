@@ -1,121 +1,90 @@
-html {  
-   font-family: Helvetica, sans-serif;
-   font-size: 100%;
-}
-
+html { font-family: Helvetica, sans-serif; }
 
 body {
-   display: grid; 
-   grid-template-areas: " A B B B C "
-                        " A D D D C "
-                        " A E E F C "
-                        " A G G G C "
-                        " A H H H C ";
-   grid-template-columns: 1fr repeat(3,25%) 1fr;
-   padding-left: 0;
-   /* background: #ABABAB; */
-  }
-
-span {
-   color: #64C4BC;
-   font-weight: bold;
-}
-
-
-h2 {
-   padding-bottom: 0.5em;
-}
-
-
-ul {
-   list-style: none;
-}
-
-
-.area {
-   background-color: #EEEEEE;
-   padding-bottom: 1em;
+ display: grid; 
+ grid-template-areas: " Z A A A X "
+                      " Z B B C X "
+                      " Z D D D X ";
+ grid-template-columns: 1fr repeat(3,25%) 1fr;
 }
 
 header {
-   grid-area: B;
-   margin-bottom: 2rem;
-   justify-content: space-between;
-   background-color: #64C4BC;
-   padding-left: 1em;
-   margin-bottom: 2rem;
+ grid-area: A;
+ margin: 0 0 2rem; /*Arriba|Horizontal|Abajo*/
+ padding: 5rem  1rem  2rem;
+ background-color: #64C4BC;
 }
+
+h1 {
+ margin: 0 0 1rem;
+ font-size: 3rem;
+}
+
 header span {
-   color: white;
-   font-weight: bold;
+ color: white;
+ font-weight: bold;
 }
 
-header h1 {
-   font-size: 3em;
-   margin-bottom: 0.5rem;
-   padding-right: 0;
-}
-
-header div {
-   padding-top: 1em;
+header h2 {
+ margin: 0 0 3rem;
 }
 
 header p {
-   line-height: 0.3em;
-   padding-right: 1em;
-}
-
-.Resume {
-   grid-area: D;
-   margin-top: 0;
-   margin-bottom: 2rem;
-   font-size: 1.5em;
+ margin: 0;
+ font-size: 1.5rem;
 }
 
 main {
-   grid-area: E;
-   margin-right: 1em;
-   margin-bottom: 1rem;
+ grid-area: B;
+ margin: 0 1rem 1rem 0;
+ padding-top: 1rem;
 }
 
-#Education li {
-   font-size: 1.5em;
+main, aside section, footer {
+background-color: #EEEEEE;
 }
 
-
-.TopH2 {
-   margin-bottom: 0;
-   border-bottom: 1px solid black;
-   padding-bottom: 0.5em;
-   padding-left: 1em;
-   margin-left: 0;
+h2 {
+ margin: 0;
+ padding: 0 1rem;
+ border-bottom: 1px solid black;
 }
 
-main article, section article, #Education article {
-   display: flex;
+section {
+  display: flex;
 }
 
-.Year {
-      flex: 0 0 auto;
-      width: 2.0em;
-      font-size: 1.5em;
-      padding: 0.8em;
-      margin-right: 0.2em; 
-      margin-left: 0.2em; 
-      margin-top: 1em;
+p.First {
+ padding-top: 2rem;
 }
 
-main ul, section ul, #Education ul{
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-top: 1em;
-   padding-left: 1em;
-   border-left: 1px solid black;
-   flex: 1 1 auto;
+main p, footer p {
+ flex: 0 0 auto;
+ margin: 0;
+ padding: 0 1rem 2rem;
+ width: 2.0em;
+ font-size: 1.5rem;
 }
 
-main li {
-     font-size: 1.5em;
+ul.First {
+ padding-top: 2rem;
+}
+
+ul {
+ flex: 1 1 auto;
+ margin: 0;
+ padding: 0 1rem 2rem;
+ border-left: 1px solid black;
+ list-style: none;
+}
+
+span {
+ color: #64C4BC;
+ font-weight: bold;
+}
+
+main li, aside li, footer li {
+     font-size: 1.5rem;
      margin-bottom: 0.5rem;
   }
 
@@ -124,63 +93,37 @@ main li:first-child {
   }
 
 aside {
-   grid-area: F;
+   grid-area: C;
+   display: flex;
+   flex-flow: column nowrap;
    margin-bottom: 1rem;
-   background-color: #fff;
 }
 
-aside div {
-   border-bottom: 1em solid white;
-}
-
-aside div h2 {
-   border-bottom: 1px solid black;
-   margin-left: 0.5em;
-
+aside section {
+ display: flex;
+ flex-flow: column nowrap;
+ flex: 1 1 auto;
+ margin: 0 0 2rem 0;
+ padding-top: 1rem;
 }
 
 aside ul {
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
-   padding-left: 1em;
-   padding-right: 1em;
-
+   border-left: 0;
 }
 
-#Leadership {
-   border-bottom: 0;
+aside li{
+     margin-bottom: 0rem;
 }
-
-
-#Education {
-   grid-area: G;
-   margin-right: 1em;
-   margin-bottom: 1rem;
-   width: 100%;
-}
-
-#Skills {
-      width: 100%;
-      padding-bottom: 1em;
-      border-bottom: 0;
-   }
-
-#Skills span {
-   color: black; 
-}
-
 
 .ProgressBar {
    background-color: #FEFEFE;
-   border-bottom: 0;
+   padding-top: 0;
 }
 
 .ProgressBar div {
-   height:1em;
-   background-color: #64C4BC;
-   border-bottom: 0;
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
+   margin-bottom: 0.5rem;
+   height: 0.5em;
+   background-color: #ABABAB;
 }
 
 .P50 {
@@ -190,162 +133,106 @@ aside ul {
 .P75 {
    width:75%;
 }
-
+section.Last {
+ margin-bottom: 0;
+}
 
 footer {
-   grid-area: H;
-   justify-self: center;
-   display: flex;
+ grid-area: D;
+ margin: 0 0 1em 0;
+ padding: 1rem 0 0;
+}
+
+footer p:first-child {
+   padding-top: 2rem;
+}
+
+footer li {
    font-size: 1.5em;
 }
 
 @media all and (max-width: 980px) {
 
-   html {
-      width: 100%;
-      overflow-x: hidden;
-      margin: 0;
-      text-size-adjust: none;
-   }
+html {
+ text-size-adjust: none; /*Avoid text inflation on mobil browsers*/
+ overflow-x: hidden; /*Avoid right blank space when overflow*/
+ width: 100%;
+}
 
+body {
+ display: flex;
+ flex-flow: column;
+ margin: 0 4%;
+ width: 92%;
+}
 
-   body {
-      margin: 0;
-      width: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-   }
+header {
+ order: 0;
+ margin: 0 0 2rem 0;
+ padding: 3rem  1rem  3rem;
+}
 
-   header {
-      display: flex;
-      flex-flow: column;
-      border-bottom: 0;
-      padding-bottom: 2em;
-   }
+h1 {
+ font-size: 4.0rem;
+}
 
-   header h1 {
-      order: 0;
-      margin-top: 1em;
-      margin-left: 1.5rem;
-      margin-bottom: 0em;   
-      font-size: 4.2em;
-   }
+header h2 {
+ font-size: 3.2em;
+ margin-bottom: 2rem;
+ padding-bottom: 1rem;
+}
 
-   header h2 {
-      font-size: 3.2em;
-      margin-left: 1.5rem;
-      margin-bottom: 0;
-   }
+header p {
+ margin: 0;
+ font-size: 3.0rem;
+}
 
-   
-   header div {
-      display: flex;
-      flex-flow: row wrap; 
-      justify-content: space-around;
-   } 
+main {
+ display: block; /*block*/
+ order: 1;
+ margin-bottom: 2rem;
+}
 
-   header p {
-      width: 100%;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-   }
+main h2, main h2, aside h2, footer h2 {
+ font-size: 3rem;
+}
 
-   .HeaderP {
-      margin-bottom: 0.9em;
-   }
-
-
-   main {
-      display: block; /*block*/
-      order: 1;
-      margin-bottom: 2rem;
-   }
-
-
-   p.Resume {
-      display: block; /*block*/
-      margin-left: 1em;
-      font-size: 1.5rem;
-      text-justify: auto;
-   }
-
-.TopH2 {
-      font-size: 2.5rem;
-   }
-
-article {
-     display: flex;
-     font-size: 1.5rem;
-     
-  }
-
-   .Year {
-      flex: 0 0 auto;
-      width: 2.0em;
-      padding: 0.5em 0.5em 0.5em 0; margin-right: 0.2em;
-      font-size: 2rem;
-      font-weight: bold;
-   }
-
-main ul {
-     padding-top: 1.5em;
-  }
-
-main li {
-   font-size: 1.5rem;
-  }
+main p, main p, aside p, footer p {
+font-size: 3rem;
+}
 
 main li:first-child {
      margin-bottom: 0rem;
   }
   
+main li, main li, aside li, footer li {
+ font-size: 3rem;
+}
 
 aside {
-     order: 4;
-     margin-bottom: 2rem;
-     font-size: 1.5em;
-   }
+ order: 2;
+ margin-bottom: 2rem;
+ font-size: 1.5em;
+}
 
-aside div {
-   border-bottom: 1em solid white;
-}   
-      
 aside h2 {
-      padding-left: 1em;
-   }
+ padding-left: 1em;
+}
 
-#Education {
-      display: block; /*block*/
-      order: 3;
-      margin-bottom: 2rem;
-      font-size: 1.5rem;
-   }
-
-#Education li {
-      width: 100%;
-      font-size: 1.5rem; 
-   }
-
-
-   footer {
-     order: 5;
-     align-self: flex-start;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     font-size: 3em;
-   }
-
-   footer p {
-      margin: 0.3em;
-   }
-
+footer {
+ display: block; /*block*/
+ order: 3;
+ margin-bottom: 2rem;
+ font-size: 1.5rem;
+}
 
 .Hidden {
    display: none;
 }
 
+} 
 
-  } 
+
+
+
+

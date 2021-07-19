@@ -1,2 +1,6 @@
 .dom.html
+<<<<<<< HEAD
 *.swp
+=======
+*swp
+>>>>>>> refactoring
