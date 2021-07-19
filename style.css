@@ -63,7 +63,7 @@ main p, article p {
  margin: 0;
  padding: 0 1rem 2rem;
  width: 2.0em;
- font-size: 1.5em;
+ font-size: 1.5rem;
 }
 
 ul.First {
@@ -103,7 +103,7 @@ aside section {
  display: flex;
  flex-flow: column nowrap;
  flex: 1 1 auto;
- margin: 0 0 1rem 0;
+ margin: 0 0 2rem 0;
  padding-top: 1rem;
 }
 
@@ -150,8 +150,7 @@ article li {
    font-size: 1.5em;
 }
 
-
-@media all and (max-width: 1080px) {
+@media all and (max-width: 980px) {
 
 html {
  text-size-adjust: none; /*Avoid text inflation on mobil browsers*/
@@ -162,8 +161,8 @@ html {
 body {
  display: flex;
  flex-flow: column;
- width: 100%;
- margin: 0;
+ margin: 0 4%;
+ width: 92%;
 }
 
 header {
@@ -173,12 +172,13 @@ header {
 }
 
 h1 {
- font-size: 4.5rem;
+ font-size: 4.0rem;
 }
 
 header h2 {
  font-size: 3.2em;
  margin-bottom: 2rem;
+ padding-bottom: 1rem;
 }
 
 header p {
@@ -186,73 +186,44 @@ header p {
  font-size: 3.0rem;
 }
 
-header div {
- display: flex;
- flex-flow: row wrap; 
- justify-content: space-around;
-} 
-
-
 main {
-      display: block; /*block*/
-      order: 1;
-      margin-bottom: 2rem;
+ display: block; /*block*/
+ order: 1;
+ margin-bottom: 2rem;
 }
 
+main h2, main h2, aside h2, article h2 {
+ font-size: 3rem;
+}
 
-section {
-     display: flex;
-     font-size: 1.5rem;
-  }
-
-   .Year {
-      flex: 0 0 auto;
-      width: 2.0em;
-      padding: 0.5em 0.5em 0.5em 0;
-      margin-right: 0.2em;
-      font-size: 2rem;
-      font-weight: bold;
-   }
-
-main ul {
-     padding-top: 1.5em;
-  }
-
-main li {
-   font-size: 1.5rem;
-  }
+main p, main p, aside p, article p {
+font-size: 3rem;
+}
 
 main li:first-child {
      margin-bottom: 0rem;
   }
   
+main li, main li, aside li, article li {
+ font-size: 3rem;
+}
 
 aside {
-     order: 4;
-     margin-bottom: 2rem;
-     font-size: 1.5em;
-   }
+ order: 2;
+ margin-bottom: 2rem;
+ font-size: 1.5em;
+}
 
-aside section {
-   border-bottom: 1em solid white;
-}   
-      
 aside h2 {
-      padding-left: 1em;
-   }
+ padding-left: 1em;
+}
 
 article {
-      display: block; /*block*/
-      order: 3;
-      margin-bottom: 2rem;
-      font-size: 1.5rem;
-   }
-
-article li {
-      width: 100%;
-      font-size: 1.5rem; 
-   }
-
+ display: block; /*block*/
+ order: 3;
+ margin-bottom: 2rem;
+ font-size: 1.5rem;
+}
 
 .Hidden {
    display: none;
