@@ -1,32 +1,33 @@
 html { font-family: Helvetica, sans-serif; }
 
 body {
-display: grid; 
-grid-template-areas: " Z A A A X "
-                     " Z B B C X "
-                     " Z D D D X ";
-grid-template-columns: 1fr repeat(3,25%) 1fr;
+ display: grid; 
+ grid-template-areas: " Z A A A X "
+                      " Z B B C X "
+                      " Z D D D X ";
+ grid-template-columns: 1fr repeat(3,25%) 1fr;
 }
 
 header {
  grid-area: A;
- margin: 0 0 2rem 0;
- padding: 5rem  1rem  2rem 1rem;
+ margin: 0 0 2rem; /*Arriba|Horizontal|Abajo*/
+ padding: 5rem  1rem  2rem;
  background-color: #64C4BC;
 }
 
 h1 {
- margin: 0 0 1rem 0;
+ margin: 0 0 1rem;
  font-size: 3rem;
 }
 
 header span {
-   color: white;
-   font-weight: bold;
+ color: white;
+ font-weight: bold;
 }
 
-h2 {
-   margin: 0 0 3rem 0;
+
+header h2 {
+ margin: 0 0 3rem;
 }
 
 header p {
@@ -35,26 +36,57 @@ header p {
 }
 
 
+main {
+ grid-area: B;
+ margin: 0 1rem 1rem 0;
+ padding: 1rem 0 0;
+}
+
+main h2, #Education h2, aside h2 {
+ margin: 0;
+ padding: 0 1rem;
+ border-bottom: 1px solid black;
+}
+
+ article {
+   display: flex;
+}
+
+p.First {
+ padding-top: 2rem;
+}
+
+main p, #Education p {
+ flex: 0 0 auto;
+ margin: 0;
+ padding: 0 1rem 2rem;
+ width: 2.0em;
+ font-size: 1.5em;
+}
+
+#Education p:first-child {
+   padding-top: 2rem;
+}
+
+
+ul.First {
+   padding-top: 2rem;
+}
+
+ul {
+   flex: 1 1 auto;
+   margin: 0;
+   padding: 0 1rem 2rem;
+   border-left: 1px solid black;
+}
+
 ul {
  list-style: none;
+
 }
 
-.area {
+.Area {
 background-color: #EEEEEE;
-padding-bottom: 1em;
-}
-
-
-header div {
-   padding-top: 1em;
-}
-
-
-
-main {
-   grid-area: B;
-   margin-right: 1em;
-   margin-bottom: 1rem;
 }
 
 span {
@@ -64,38 +96,6 @@ span {
 
 #Education li {
    font-size: 1.5em;
-}
-
-
-.TopH2 {
-   margin-bottom: 0;
-   border-bottom: 1px solid black;
-   padding-bottom: 0.5em;
-   padding-left: 1em;
-   margin-left: 0;
-}
-
-main article, section article, #Education article {
-   display: flex;
-}
-
-.Year {
-      flex: 0 0 auto;
-      width: 2.0em;
-      font-size: 1.5em;
-      padding: 0.8em;
-      margin-right: 0.2em; 
-      margin-left: 0.2em; 
-      margin-top: 1em;
-}
-
-main ul, section ul, #Education ul{
-   margin-top: 0;
-   margin-bottom: 0;
-   padding-top: 1em;
-   padding-left: 1em;
-   border-left: 1px solid black;
-   flex: 1 1 auto;
 }
 
 main li {
@@ -110,6 +110,7 @@ main li:first-child {
 aside {
    grid-area: C;
    margin-bottom: 1rem;
+   padding-top: 1rem;
    background-color: #fff;
 }
 
@@ -117,17 +118,8 @@ aside div {
    border-bottom: 1em solid white;
 }
 
-aside div h2 {
-   border-bottom: 1px solid black;
-   margin-left: 0.5em;
-}
-
 aside ul {
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
-   padding-left: 1em;
-   padding-right: 1em;
-
+   border-left: 0;
 }
 
 #Leadership {
@@ -192,7 +184,7 @@ body {
 header {
  order: 0;
  margin: 0 0 2rem 0;
- padding: 3rem  1rem  3rem 1rem;
+ padding: 3rem  1rem  3rem;
 }
 
 h1 {
@@ -236,7 +228,8 @@ article {
    .Year {
       flex: 0 0 auto;
       width: 2.0em;
-      padding: 0.5em 0.5em 0.5em 0; margin-right: 0.2em;
+      padding: 0.5em 0.5em 0.5em 0;
+      margin-right: 0.2em;
       font-size: 2rem;
       font-weight: bold;
    }
@@ -285,5 +278,9 @@ aside h2 {
    display: none;
 }
 
+} 
 
-  } 
+
+
+
+
