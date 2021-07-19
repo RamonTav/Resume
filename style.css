@@ -39,24 +39,24 @@ header p {
 main {
  grid-area: B;
  margin: 0 1rem 1rem 0;
- padding: 1rem 0 0;
+ padding-top: 1rem;
 }
 
-main h2, #Education h2, aside h2 {
+main h2, article h2, aside h2 {
  margin: 0;
  padding: 0 1rem;
  border-bottom: 1px solid black;
 }
 
- article {
-   display: flex;
+section {
+  display: flex;
 }
 
 p.First {
  padding-top: 2rem;
 }
 
-main p, #Education p {
+main p, article p {
  flex: 0 0 auto;
  margin: 0;
  padding: 0 1rem 2rem;
@@ -64,7 +64,7 @@ main p, #Education p {
  font-size: 1.5em;
 }
 
-#Education p:first-child {
+article p:first-child {
    padding-top: 2rem;
 }
 
@@ -85,7 +85,7 @@ ul {
 
 }
 
-main, #Education {
+main, article {
 background-color: #EEEEEE;
 }
 
@@ -94,12 +94,12 @@ span {
  font-weight: bold;
 }
 
-#Education li {
+article li {
    font-size: 1.5em;
 }
 
-main li {
-     font-size: 1.5em;
+main li, aside li, article li {
+     font-size: 1.5rem;
      margin-bottom: 0.5rem;
   }
 
@@ -114,7 +114,9 @@ aside {
    margin-bottom: 1rem;
 }
 
-aside div {
+aside section {
+ display: flex;
+ flex-flow: column nowrap;
  flex: 1 1 auto;
  margin: 0 0 1rem 0;
  padding-top: 1rem;
@@ -125,21 +127,19 @@ aside ul {
    border-left: 0;
 }
 
-div.Last {
+aside li{
+     margin-bottom: 0rem;
+}
+
+section.Last {
  margin-bottom: 0;
 }
 
-#Education {
-   grid-area: D;
-   margin-right: 1em;
-   margin-bottom: 1rem;
-   width: 100%;
+article {
+ grid-area: D;
+ margin: 0 0 1em 0;
+ padding: 1rem 0 0;
 }
-
-#Skills span {
-   color: black; 
-}
-
 
 .ProgressBar {
    background-color: #FEFEFE;
@@ -147,8 +147,8 @@ div.Last {
 }
 
 .ProgressBar div {
-   height:1em;
-   background-color: #64C4BC;
+   height: 0.5em;
+   background-color: #ABABAB;
 }
 
 .P50 {
@@ -194,12 +194,11 @@ header p {
  font-size: 3.0rem;
 }
 
-   
-   header div {
-      display: flex;
-      flex-flow: row wrap; 
-      justify-content: space-around;
-   } 
+header div {
+ display: flex;
+ flex-flow: row wrap; 
+ justify-content: space-around;
+} 
 
 
 main {
@@ -208,14 +207,10 @@ main {
       margin-bottom: 2rem;
 }
 
-.TopH2 {
-      font-size: 2.5rem;
-   }
 
-article {
+section {
      display: flex;
      font-size: 1.5rem;
-     
   }
 
    .Year {
@@ -246,7 +241,7 @@ aside {
      font-size: 1.5em;
    }
 
-aside div {
+aside section {
    border-bottom: 1em solid white;
 }   
       
@@ -254,14 +249,14 @@ aside h2 {
       padding-left: 1em;
    }
 
-#Education {
+article {
       display: block; /*block*/
       order: 3;
       margin-bottom: 2rem;
       font-size: 1.5rem;
    }
 
-#Education li {
+article li {
       width: 100%;
       font-size: 1.5rem; 
    }
