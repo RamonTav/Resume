@@ -85,7 +85,7 @@ ul {
 
 }
 
-.Area {
+main, #Education {
 background-color: #EEEEEE;
 }
 
@@ -109,23 +109,25 @@ main li:first-child {
 
 aside {
    grid-area: C;
+   display: flex;
+   flex-flow: column nowrap;
    margin-bottom: 1rem;
-   padding-top: 1rem;
-   background-color: #fff;
 }
 
 aside div {
-   border-bottom: 1em solid white;
+ flex: 1 1 auto;
+ margin: 0 0 1rem 0;
+ padding-top: 1rem;
+ background-color: #EEEEEE;
 }
 
 aside ul {
    border-left: 0;
 }
 
-#Leadership {
-   border-bottom: 0;
+div.Last {
+ margin-bottom: 0;
 }
-
 
 #Education {
    grid-area: D;
@@ -134,12 +136,6 @@ aside ul {
    width: 100%;
 }
 
-#Skills {
-      width: 100%;
-      padding-bottom: 1em;
-      border-bottom: 0;
-   }
-
 #Skills span {
    color: black; 
 }
@@ -147,15 +143,12 @@ aside ul {
 
 .ProgressBar {
    background-color: #FEFEFE;
-   border-bottom: 0;
+   padding-top: 0;
 }
 
 .ProgressBar div {
    height:1em;
    background-color: #64C4BC;
-   border-bottom: 0;
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
 }
 
 .P50 {
