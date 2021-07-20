@@ -1,39 +1,38 @@
 .
-└──body(grid)
+└──body(grid/flex)
     ├──header
     │   ├──h1-span
     │   ├──h2
     │   └──p
     ├──main
     │   ├──h2
-    │   └──section
+    │   └──section(Flex)
     │       ├──p.First
     │       └──ul.First
     │           ├──li-span
     │           └──li
-    ├──aside
-    │   ├──section
+    ├──aside.(Flex)
+    │   ├──section(Flex)
     │   │   ├──h2
     │   │   └──ul.First
     │   │       ├──li-span
     │   │       └──li
-    │   ├──section
+    │   ├──section(Flex)
     │   │   ├──h2
     │   │   └──ul.First
     │   │       ├──li-span
     │   │       └──li
     │   │           └──div.ProgressBar
     │   │               └──div.Pfoo
-    │   └──section.Last
+    │   └──section.Last(Flex)
     │       ├──h2
     │       └──ul
     │           ├──li-span
     │           └──li
     └──footer
         ├──h2
-        └──section
+        └──section(Flex)
             ├──p.First
             └──ul.First
                 ├──li-span
                 └──li
-
