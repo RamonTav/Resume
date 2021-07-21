@@ -4,7 +4,8 @@ body {
  display: grid; 
  grid-template-areas: " Z A A A X "
                       " Z B B C X "
-                      " Z D D D X ";
+                      " Z D D D X "
+                      " Z E E E X ";
  grid-template-columns: 1fr repeat(3,25%) 1fr;
 }
 
@@ -40,7 +41,7 @@ main {
  padding-top: 1rem;
 }
 
-main, aside section, footer {
+main, aside section, article, footer {
 background-color: #EEEEEE;
 }
 
@@ -58,7 +59,7 @@ p.First {
  padding-top: 2rem;
 }
 
-main p, footer p {
+main p, article p, footer p {
  flex: 0 0 auto;
  margin: 0;
  padding: 0 1rem 2rem;
@@ -83,7 +84,7 @@ span {
  font-weight: bold;
 }
 
-main li, aside li, footer li {
+main li, aside li, article li, footer li {
      font-size: 1.5rem;
      margin-bottom: 0.5rem;
   }
@@ -136,15 +137,16 @@ section.Last {
  margin-bottom: 0;
 }
 
-footer {
+article {
  grid-area: D;
- margin: 0 0 1em 0;
+ margin: 0 0 1rem 0;
  padding: 1rem 0 0;
-}
+} 
 
-
-footer li {
-   font-size: 1.5em;
+footer {
+ grid-area: E;
+ margin: 0 0 1rem 0;
+ padding: 1rem 0 0;
 }
 
 @media all and (max-width: 980px) {
@@ -189,11 +191,11 @@ main {
  margin-bottom: 2rem;
 }
 
-main h2, main h2, aside h2, footer h2 {
+main h2, main h2, aside h2, article h2,  footer h2 {
  font-size: 3rem;
 }
 
-main p, main p, aside p, footer p {
+main p, main p, aside p, article p, footer p {
 font-size: 3rem;
 }
 
@@ -201,12 +203,12 @@ main li:first-child {
      margin-bottom: 0rem;
   }
   
-main li, main li, aside li, footer li {
+main li, main li, aside li, article li, footer li {
  font-size: 3rem;
 }
 
 aside {
- order: 3;
+ order: 4;
  margin-bottom: 2rem;
  font-size: 1.5em;
 }
@@ -215,9 +217,17 @@ aside h2 {
  padding-left: 1em;
 }
 
-footer {
+article {
  display: block; /*block*/
  order: 2;
+ margin-bottom: 2rem;
+ font-size: 1.5rem;
+}
+
+
+footer {
+ display: block; /*block*/
+ order: 3;
  margin-bottom: 2rem;
  font-size: 1.5rem;
 }
