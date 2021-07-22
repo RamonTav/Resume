@@ -240,6 +240,7 @@ footer {
 @media print {
  @page { 
   size: 8.5in 11in;
+  margin: 40pt;
   @top-right {
   content: "page " counter(page) " of " counter(pages);
   }
@@ -251,7 +252,9 @@ header {
 } 
 
 h1 {
- font-size: 8pt;
+ margin-bottom: 4pt;
+ padding: 8pt 0 0;
+ font-size: 16pt;
 }
 
 header span {
@@ -260,13 +263,14 @@ header span {
 
 header h2 {
  margin-bottom: 4pt;
- padding: 0; 
+ padding: 0 0 4pt; 
  font-size: 8pt;
 }
 
 header p {
  font-size: 8pt; 
- margin-bottom: 2pt;
+ padding-bottom: 0;
+ margin-bottom: 6pt;
 }
 
 main li, aside li, article li, footer li {
