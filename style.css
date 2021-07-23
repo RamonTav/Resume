@@ -245,11 +245,21 @@ footer {
   content: "page " counter(page) " of " counter(pages);
   }
  }
+
+body {
+ display: flex;
+ flex-flow: column;
+}
+
+header, main, aside section, article, footer {
+margin-bottom: 12pt;
+background-color: #FFFFFF;
+}
+
 header {
+ order: 0;
  border: 1px solid black;
- margin-bottom: 8pt;
  padding: 4pt 2pt 0 6pt;
- background-color: #fff;
 } 
 
 h1 {
@@ -258,7 +268,7 @@ h1 {
  font-size: 16pt;
 }
 
-header span {
+header span, main span, aside span, article span, footer span  {
  color: black;
 }
 
@@ -274,11 +284,33 @@ header p {
  margin-bottom: 6pt;
 }
 
-main li, aside li, article li, footer li {
- font-size: 8pt;
+main{
+ order: 1;
+} 
+
+main, aside, article, footer {
+ margin-top: 0;
+ padding-top: 0;
+ width: 100%;
 }
 
-main h2, main h2, aside h2, article h2,  footer h2 {
+main h2, aside h2, article h2, footer h2 {
+ font-size: 9pt;
+}
+
+main p.First {
+ padding-top: 4pt;
+}
+
+main ul.First {
+ padding-top: 4pt;
+}
+
+ul {
+ padding-bottom: 4pt;
+}
+
+main li, aside li, article li, footer li {
  font-size: 8pt;
 }
 
@@ -286,5 +318,19 @@ main p, main p, aside p, article p, footer p {
 font-size: 8pt;
 }
 
+article {
+ order: 2;
+} 
+
+footer {
+ order: 3;
+} 
+
+aside {
+ order: 4;
+} 
+
+#Skills {
+ display: none;
 }
 

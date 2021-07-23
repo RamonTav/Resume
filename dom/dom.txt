@@ -12,12 +12,7 @@
     │           ├──li-span
     │           └──li
     ├──aside.(Flex)
-    │   ├──section(Flex)
-    │   │   ├──h2
-    │   │   └──ul.First
-    │   │       ├──li-span
-    │   │       └──li
-    │   ├──section(Flex)
+    │   ├──section.Skills(Flex)
     │   │   ├──h2
     │   │   └──ul.First
     │   │       ├──li-span
@@ -29,6 +24,13 @@
     │       └──ul
     │           ├──li-span
     │           └──li
+    │
+    ├──article.(Flex)
+    │   └──section(Flex)
+    │       ├──h2
+    │       └──ul.First
+    │           ├──li-span
+    │           └──li
     └──footer
         ├──h2
         └──section(Flex)
