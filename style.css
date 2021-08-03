@@ -160,11 +160,15 @@ aside li {
 }
 
 .P50 {
-   width:50%;
+ width:50%;
 }
 
 .P75 {
-   width:75%;
+ width:75%;
+}
+
+.P100 {
+ width:100%;
 }
 
 .Last {
