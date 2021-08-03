@@ -25,19 +25,23 @@
     │           ├──li-span
     │           └──li
     │
-    ├──article.(Flex)
-    │   └──section(Flex)
-    │       ├──h2
-    │       └──ul.First
+    ├──article#Education
+    │   ├──h2
+    │   └─section(Flex)
+    │      ├──p
+    │      └──ul.First
     │           ├──li-span
     │           └──li
     │
-    ├──article.(Flex)
-    │   └──section(Flex)
-    │       ├──h2
-    │       └──ul.First
+    ├──article#Courses
+    │   ├──h2
+    │   └─section(Flex)
+    │      ├──p
+    │      └──ul.First
     │           ├──li-span
     │           └──li
+    │
+    │
     └──footer
         ├──h2
         └──section(Flex)
