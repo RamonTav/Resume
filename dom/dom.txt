@@ -1,37 +1,61 @@
 .
 └──body(grid/flex)
     ├──header
-    │   ├──h1-span
-    │   ├──h2
+    │   ├──h1
+    │   ├──h2-span
     │   └──p
+    │    
     ├──main
     │   ├──h2
-    │   └──section(Flex)
+    │ 4x└──section(Flex)
     │       ├──p.First
-    │       └──ul.First
-    │           ├──li-span
-    │           └──li
-    ├──aside.(Flex)
+    │       └──div
+    │           ├──h3.First-strong
+    │           ├──h3-span
+    │           └──ul.First
+    │               ├──li
+    │               ├──li
+    │               └──li
+    │                   └──div.Pfoo
+    │    
+    ├──aside(Flex) "Only on big screen"
     │   ├──section.Skills(Flex)
     │   │   ├──h2
     │   │   └──ul.First
-    │   │       ├──li-span
-    │   │       └──li
+    │   │    5x └──li-span
     │   │           └──div.ProgressBar
     │   │               └──div.Pfoo
+    │   │
+    │   ├──section.Language(Flex)
+    │   │   ├──h2
+    │   │   └──ul.First
+    │   │       └──li-span
+    │   │           └──div.ProgressBar
+    │   │               └──div.Pfoo
+    │   │
     │   └──section.Last(Flex)
     │       ├──h2
-    │       └──ul
-    │           ├──li-span
-    │           └──li
-    │
+    │       └──ul.Last
+    │        7x └──li-span
+    │           
     ├──article#Education
     │   ├──h2
-    │   └─section(Flex)
+    │ 2x└─section(Flex)
     │      ├──p
     │      └──ul.First
     │           ├──li-span
     │           └──li
+    │
+    ├──article#Languages
+    │   ├──h2
+    │   └─section(Flex)
+    │      ├──p.First
+    │      └──ul.First
+    │          └──li
+    │              ├──p-span
+    │              ├──div.ProgressBar .LangIndic
+    │              │   └──div.Pfoo
+    │              └──p.LangIndic
     │
     ├──article#Courses
     │   ├──h2
@@ -41,11 +65,10 @@
     │           ├──li-span
     │           └──li
     │
-    │
-    └──footer
+    └──footer "Only on small screen"
         ├──h2
-        └──section(Flex)
-            ├──p.First
+      4x└──section(Flex)
+            ├──i.fas fa-map-marked-alt
             └──ul.First
-                ├──li-span
-                └──li
+                └──li-span
+                

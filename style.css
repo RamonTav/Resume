@@ -70,7 +70,7 @@ main.div p {
 main p, article p, footer p, footer i {
  flex: 0 0 auto;
  margin: 0 1rem 0 0;
- padding: 0 1rem 2rem;
+ padding: 0 1rem 0rem;
  width: 3.0rem;
  font-size: 1.5rem;
 }
@@ -205,6 +205,15 @@ article#Courses {
  padding: 1rem 0 0;
 } 
 
+#Languages {
+ display: none;
+}
+
+p.LangIndic {
+ display: none;
+}
+
+
 footer {
  grid-area: F;
  display: none;
@@ -223,6 +232,11 @@ text-align: center;
 
 .fa-map-marked-alt {
  padding-top: 2rem;
+}
+
+footer ul {
+ border-left: 1px solid black;
+ padding-left: 2rem;
 }
 
 
@@ -285,7 +299,6 @@ main h3 {
  font-size: 3rem;
 }
 
-
 main li:first-child {
      margin-bottom: 0rem;
 }
@@ -305,13 +318,22 @@ aside h2 {
  padding-left: 1em;
 }
 
-
 article {
  display: block; /*block*/
  order: 2;
  margin-bottom: 2rem;
  font-size: 1.5rem;
 }
+
+#Languages div {
+ padding-left: 0;
+ border-left: 0;
+}
+
+#Languages {
+ display: block;
+}
+
 
 footer {
  display: block; /*block*/
@@ -348,6 +370,7 @@ footer i {
 body {
  display: flex;
  flex-flow: column;
+ background-color: #fff;
 }
 
 header, main, aside section, article, footer {
@@ -383,8 +406,9 @@ header p {
  margin-bottom: 6pt;
 }
 
-main{
+main {
  order: 1;
+ margin-bottom: 0pt;
 } 
 
 main, aside, article, footer {
@@ -397,16 +421,48 @@ main h2, aside h2, article h2, footer h2 {
  font-size: 9pt;
 }
 
-main p.First {
- padding-top: 4pt;
+main h3 {
+font-size: 7pt;
+margin: 0;
+padding: 0;
 }
 
-main ul.First {
- padding-top: 4pt;
+strong {
+ font-size: 7pt;
+ color: black;
+}
+
+main p.First {
+ margin-right: 0pt;
+ padding: 6pt 0pt 0pt 6pt;
+}
+
+main h3.First {
+ margin-right: 0;
+ padding-top: 6pt;
+ padding-bottom: 2pt;
+}
+
+main p {
+ margin-right: 0pt;
+ padding: 2pt 0pt 2pt 6pt;
+}
+
+main h3 {
+ margin-right: 0;
+ padding-top: 2pt;
+ padding-bottom: 2pt;
 }
 
 ul {
- padding-bottom: 4pt;
+ padding-bottom: 0;
+ padding-top: 2pt;
+}
+
+
+main ul.First {
+ padding-top: 4pt;
+ padding-bottom: 0;
 }
 
 main li, aside li, article li, footer li {
@@ -415,21 +471,84 @@ main li, aside li, article li, footer li {
 
 main p, main p, aside p, article p, footer p {
 font-size: 8pt;
+padding-left: 6pt;
 }
 
-article {
+article p.First, #Courses p, footer i {
+ width: 6pt;
+ padding-left: 6pt;
+ margin-right: 18pt;
+}
+
+ul.First {
+ padding-top: 4pt;
+}
+
+
+#Education {
  order: 2;
 } 
 
-footer {
+#Languages {
  order: 3;
+ display: block;
 } 
 
-aside {
+p#Ingles {
+ padding-bottom: 4pt;
+ padding-left: 0;
+} 
+
+div.LangIndic {
+ display: none;   
+} 
+
+p.LangIndic {
+ display: block;   
+ padding-left: 0;
+} 
+
+#Courses {
  order: 4;
 } 
 
-#Skills {
- display: none;
+#Courses p {
+ width: 8pt;
 }
 
+
+#Education, #Languages, #Courses {
+ margin-top: 0;
+ margin-bottom: 0pt;
+ padding-top: 0;
+ padding-bottom: 0;
+}
+
+main h2, article h2, footer h2 {
+ margin: 0;
+ padding: 0 6pt;
+}
+
+aside {
+ display: none;
+} 
+
+footer {
+ order: 5;
+ display: block;
+} 
+
+.fas {
+ padding-top: 4pt;
+ margin-bottom: 4pt;
+}
+
+footer i {
+ font-size: 12pt;
+}
+
+footer ul {
+ padding-top: 4pt;
+}
+
+}
