@@ -192,7 +192,7 @@ article ul.Last {
 
 article#Education {
  grid-area: D;
- margin: 0 0 1rem 0;
+ margin: 0 0 2rem 0;
  padding: 1rem 0 0;
 } 
 
@@ -202,7 +202,7 @@ article#Education {
 
 article#Courses {
  grid-area: E;
- margin: 0 0 1rem 0;
+ margin: 0 0 2rem 0;
  padding: 1rem 0 0;
 } 
 
