@@ -39,7 +39,7 @@ header p {
 
 main {
  grid-area: B;
- margin: 0 1rem 1rem 0;
+ margin: 0 0 1rem 0;
  padding-top: 1rem;
 }
 
@@ -342,6 +342,10 @@ footer {
  margin-bottom: 2rem;
  font-size: 1.5rem;
 }
+
+footer #url {
+ font-size: 2.5rem;
+ }
 
 footer i {
  width: 7rem;
