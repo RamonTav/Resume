@@ -39,7 +39,7 @@ header p {
 
 main {
  grid-area: B;
- margin: 0 0 1rem 0;
+ margin: 0 1rem 1rem 0;
  padding-top: 1rem;
 }
 
