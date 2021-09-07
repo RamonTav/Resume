@@ -39,7 +39,7 @@ header p {
 
 main {
  grid-area: B;
- margin: 0 1rem 1rem 0;
+ margin: 0 1rem 2rem 0;
  padding-top: 1rem;
 }
 
@@ -129,7 +129,7 @@ aside {
    grid-area: C;
    display: flex;
    flex-flow: column nowrap;
-   margin-bottom: 1rem;
+   margin-bottom: 2rem;
 }
 
 aside section {
@@ -280,6 +280,7 @@ header p {
 main {
  display: block; /*block*/
  order: 1;
+ margin-right: 0;
  margin-bottom: 2rem;
 }
 
