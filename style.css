@@ -8,15 +8,15 @@ body {
                       " Z E E E X "
                       " Z F F F X ";
  grid-template-columns: 1fr repeat(3,25%) 1fr;
- background-color: #FFFCD9;
- color: #332B09;
+ background-color: #afd3f0;
+ color: #000000;
 }
 
 header {
  grid-area: A;
  margin: 1rem 0 1.5rem; /*Arriba|Horizontal|Abajo*/
  padding: 5rem  1rem  2rem;
- background-color: #E7C142;
+ background-color: #095ea2;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 header span {
- color: #DF7401;
+ color: #79ef21;
  font-weight: bold;
 }
 
@@ -44,7 +44,7 @@ main {
 }
 
 main, aside section, article, footer {
-background-color: #FAF1AE;
+background-color: #4882b0;
 }
 
 h2 {
@@ -108,7 +108,7 @@ ul {
 }
 
 span {
- color: #DF7401;
+ color: #79ef21;
  font-weight: bold;
 }
 
@@ -150,14 +150,14 @@ aside li {
 }
 
 .ProgressBar {
-   background-color: #FFFCD9;
+   background-color: #afd3f0;
    padding-top: 0;
 }
 
 .ProgressBar div {
    margin-bottom: 0.5rem;
    height: 0.5em;
-   background-color: #CEBF53;
+   background-color: #095ea2;
 }
 
 .P50 {
