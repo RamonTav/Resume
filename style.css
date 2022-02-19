@@ -246,7 +246,7 @@ footer ul {
 html {
  text-size-adjust: none; /*Avoid text inflation on mobil browsers*/
  overflow-x: hidden; /*Avoid right blank space when overflow*/
- width: 100%
+ width: 100%;
 }
 
 body {
